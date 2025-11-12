@@ -22,33 +22,33 @@ export default function Services() {
   const services = [
     {
       title: content.services.dawah.title,
-      subtitle: content.services.dawah.subtitle,
+      subtitle: (content.services.dawah as any).subtitle || "Spreading Knowledge",
       description: content.services.dawah.description,
       cta: "Discover",
       href: "/dawah",
       icon: "📖",
       color: "from-blue-500 to-blue-600",
-      impact: content.services.dawah.impact
+      impact: (content.services.dawah as any).impact
     },
     {
       title: content.services.orphanage.title,
-      subtitle: content.services.orphanage.subtitle,
+      subtitle: (content.services.orphanage as any).subtitle || "Caring for Children",
       description: content.services.orphanage.description,
       cta: "Donate",
       href: "/orphanage",
       icon: "🏠",
       color: "from-primary to-primary-light",
-      impact: content.services.orphanage.impact
+      impact: (content.services.orphanage as any).impact
     },
     {
       title: content.services.school.title,
-      subtitle: content.services.school.subtitle,
+      subtitle: (content.services.school as any).subtitle || "Quality Education",
       description: content.services.school.description,
       cta: "Learn More",
       href: "/rihad-saliheen-school",
       icon: "🎓",
       color: "from-purple-500 to-purple-600",
-      impact: content.services.school.impact
+      impact: (content.services.school as any).impact
     },
   ];
 
