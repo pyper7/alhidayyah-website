@@ -63,9 +63,18 @@ export default function DonatePage() {
     setIsProcessing(true);
 
     try {
+      // Get Paystack key from environment variable
+      const paystackKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_cc175e3fe8c1d72fbe3d01b68c6ee74626f1e79f';
+      
+      if (!paystackKey) {
+        alert('Paystack key is not configured. Please check your environment variables.');
+        setIsProcessing(false);
+        return;
+      }
+
       // Initialize Paystack payment
       const handler = window.PaystackPop.setup({
-        key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_YOUR_PUBLIC_KEY', // Replace with your Paystack public key
+        key: paystackKey,
         email: formData.email,
         amount: amountInKobo,
         currency: 'NGN',
