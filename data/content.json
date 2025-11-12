@@ -1,0 +1,247 @@
+{
+  "hero": {
+    "title": "Empowering Communities Through Faith, Education, and Compassion",
+    "subtitle": "AL-Hidayyah Islamic Foundation",
+    "description": "Guided by Islamic principles, we dedicate ourselves to spreading authentic knowledge, nurturing orphaned children, and providing quality education. Together, we build a brighter future rooted in faith and compassion.",
+    "quote": "And whoever saves one [life] - it is as if he had saved mankind entirely",
+    "quoteSource": "Quran 5:32"
+  },
+  "stats": {
+    "childrenSupported": "500+",
+    "childrenLabel": "Orphaned Children Supported",
+    "studentsEducated": "1,200+",
+    "studentsLabel": "Students Enrolled",
+    "communitiesReached": "50+",
+    "communitiesLabel": "Communities Served",
+    "yearsOfService": "15+",
+    "yearsLabel": "Years of Service"
+  },
+  "services": {
+    "dawah": {
+      "title": "Dawah & Islamic Education",
+      "subtitle": "Spreading the Light of Knowledge",
+      "description": "Our comprehensive Dawah programs bring authentic Islamic teachings to communities worldwide. Through workshops, lectures, and digital resources, we help people understand and practice Islam with wisdom and clarity.",
+      "features": [
+        "Weekly Islamic lectures by qualified scholars",
+        "Comprehensive Dawah workshops and seminars",
+        "Digital library with authentic Islamic resources",
+        "Online courses and live streaming sessions",
+        "Community outreach programs",
+        "Youth mentorship and guidance"
+      ],
+      "impact": "Over 10,000 people have benefited from our Dawah programs"
+    },
+    "orphanage": {
+      "title": "Orphan Care & Support",
+      "subtitle": "Nurturing Hearts, Building Futures",
+      "description": "Following the Sunnah of caring for orphans, we provide comprehensive support including shelter, education, healthcare, and emotional care. Every child receives love, guidance, and the tools they need to succeed in this life and the next.",
+      "features": [
+        "Safe and loving home environment",
+        "Quality education from primary to secondary level",
+        "Comprehensive healthcare and medical support",
+        "Islamic education and character development",
+        "Vocational training and life skills",
+        "Psychological counseling and emotional support"
+      ],
+      "impact": "500+ orphaned children have found a home and hope with us"
+    },
+    "school": {
+      "title": "Riyad Saliheen School",
+      "subtitle": "Excellence in Education, Rooted in Faith",
+      "description": "Our school combines academic excellence with Islamic values, preparing students to be successful in both worldly and spiritual matters. We nurture well-rounded individuals who contribute positively to society.",
+      "features": [
+        "International curriculum with Islamic integration",
+        "Qualified teachers and modern facilities",
+        "Quran memorization and Islamic studies",
+        "Character building and moral development",
+        "Extracurricular activities and sports",
+        "Scholarship programs for deserving students"
+      ],
+      "impact": "1,200+ students are receiving quality Islamic education"
+    }
+  },
+  "about": {
+    "title": "About AL-Hidayyah",
+    "subtitle": "Serving Humanity, Guided by Faith",
+    "description": "AL-Hidayyah Islamic Foundation was established with a clear vision: to serve Allah by serving His creation. We believe that true success comes from combining faith with action, knowledge with compassion, and individual growth with community development.",
+    "vision": {
+      "title": "Our Vision",
+      "content": "To be a leading Islamic organization that transforms lives through authentic Islamic education, compassionate orphan care, and community empowerment. We envision a world where every child has access to quality education, every orphan finds love and support, and every community benefits from authentic Islamic knowledge."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To serve Allah and humanity by:",
+      "points": [
+        "Spreading authentic Islamic knowledge through comprehensive Dawah programs",
+        "Providing loving care, education, and support to orphaned children",
+        "Delivering quality Islamic education that combines academic excellence with faith",
+        "Building strong, compassionate communities based on Islamic values",
+        "Empowering individuals to become positive contributors to society",
+        "Following the Sunnah of the Prophet (peace be upon him) in all our endeavors"
+      ]
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        {
+          "title": "Authenticity",
+          "description": "We base all our teachings and practices on authentic Islamic sources"
+        },
+        {
+          "title": "Compassion",
+          "description": "We serve with mercy and kindness, following the example of the Prophet (PBUH)"
+        },
+        {
+          "title": "Excellence",
+          "description": "We strive for the highest standards in all our programs and services"
+        },
+        {
+          "title": "Integrity",
+          "description": "We maintain transparency and honesty in all our dealings"
+        },
+        {
+          "title": "Community",
+          "description": "We believe in the power of unity and collective action"
+        }
+      ]
+    }
+  },
+  "dawah": {
+    "title": "Dawah & Islamic Education",
+    "subtitle": "Spreading the Light of Knowledge",
+    "description": "Our Dawah initiative is dedicated to spreading the true message of Islam through authentic teachings, educational programs, and community engagement. We reach out to Muslims and non-Muslims alike, sharing the beauty and wisdom of Islam.",
+    "features": [
+      {
+        "title": "Weekly Islamic Lectures",
+        "description": "Regular lectures by qualified scholars covering various Islamic topics including Tafseer, Hadith, Fiqh, and Seerah",
+        "icon": "📚"
+      },
+      {
+        "title": "Dawah Workshops & Seminars",
+        "description": "Comprehensive educational programs designed to deepen understanding of Islamic principles and practices",
+        "icon": "🎓"
+      },
+      {
+        "title": "Digital Resources Library",
+        "description": "Access to authentic Islamic books, articles, videos, and multimedia content for continuous learning",
+        "icon": "💻"
+      },
+      {
+        "title": "Live Streaming & Online Courses",
+        "description": "Global reach through online sessions, live broadcasts, and structured online courses",
+        "icon": "📡"
+      },
+      {
+        "title": "Community Outreach",
+        "description": "Active engagement with local communities through events, programs, and personal interactions",
+        "icon": "🤝"
+      },
+      {
+        "title": "Youth Programs",
+        "description": "Specialized programs for young Muslims including mentorship, leadership training, and character development",
+        "icon": "🌟"
+      }
+    ],
+    "impact": "Join thousands who have benefited from our Dawah programs"
+  },
+  "orphanage": {
+    "title": "Orphan Care & Support",
+    "subtitle": "Nurturing Hearts, Building Futures",
+    "description": "The Prophet (peace be upon him) said: 'I and the caretaker of an orphan will be in Paradise like this' - and he held up his index and middle fingers together. Following this beautiful Sunnah, we provide comprehensive care for orphaned children.",
+    "whatWeProvide": [
+      "Safe and loving home environment with dedicated caregivers",
+      "Quality education from primary through secondary levels",
+      "Comprehensive healthcare including regular check-ups and medical support",
+      "Islamic education with Quran memorization and character building",
+      "Vocational training and life skills development",
+      "Psychological counseling and emotional support",
+      "Recreational activities and sports programs",
+      "Scholarship opportunities for higher education"
+    ],
+    "howYouCanHelp": [
+      "Sponsor a child's education and care - make a lasting impact",
+      "Monthly donations to support daily needs and operations",
+      "One-time contributions for special projects and facilities",
+      "Volunteer your time and skills to mentor children",
+      "Donate educational materials, books, and supplies",
+      "Spread awareness about our orphanage program"
+    ],
+    "impact": "Your support helps us provide love, education, and hope to orphaned children"
+  },
+  "school": {
+    "title": "Riyad Saliheen International School",
+    "subtitle": "Excellence in Education, Rooted in Faith",
+    "description": "Riyad Saliheen School provides a unique educational experience that combines academic excellence with Islamic values. Our comprehensive curriculum prepares students for success in this world while nurturing their faith and character for the Hereafter.",
+    "features": [
+      {
+        "title": "Academic Excellence",
+        "description": "International curriculum with modern teaching methods, qualified teachers, and small class sizes for personalized attention",
+        "icon": "📖"
+      },
+      {
+        "title": "Islamic Education",
+        "description": "Integrated Islamic studies including Quran memorization, Arabic language, Seerah, and Islamic jurisprudence",
+        "icon": "🕌"
+      },
+      {
+        "title": "Character Building",
+        "description": "Focus on developing moral values, good character (Akhlaq), and responsible citizenship based on Islamic principles",
+        "icon": "✨"
+      },
+      {
+        "title": "Modern Facilities",
+        "description": "Well-equipped classrooms, science labs, library, computer labs, and sports facilities",
+        "icon": "🏫"
+      },
+      {
+        "title": "Extracurricular Activities",
+        "description": "Sports, arts, debate, Quran competitions, and various clubs to develop well-rounded individuals",
+        "icon": "🎨"
+      },
+      {
+        "title": "Scholarship Programs",
+        "description": "Financial assistance for deserving students to ensure education is accessible to all",
+        "icon": "🎓"
+      }
+    ],
+    "impact": "Preparing the next generation of Muslim leaders and scholars"
+  },
+  "testimonials": [
+    {
+      "name": "Amina Hassan",
+      "role": "Parent",
+      "content": "Riyad Saliheen School has transformed my children. They not only excel academically but have also developed strong Islamic character. The teachers are dedicated and the environment is nurturing.",
+      "rating": 5
+    },
+    {
+      "name": "Dr. Muhammad Ali",
+      "role": "Community Leader",
+      "content": "The Dawah programs at AL-Hidayyah have been instrumental in strengthening our community's understanding of Islam. The scholars are knowledgeable and the programs are well-organized.",
+      "rating": 5
+    },
+    {
+      "name": "Fatima Ibrahim",
+      "role": "Orphanage Beneficiary",
+      "content": "I lost my parents at a young age, but AL-Hidayyah became my family. They provided me with education, love, and support. Today, I'm a university graduate, all thanks to their care.",
+      "rating": 5
+    },
+    {
+      "name": "Umar Abdullah",
+      "role": "Volunteer",
+      "content": "Volunteering with AL-Hidayyah has been one of the most rewarding experiences. Seeing the impact of our work on children and communities is truly inspiring.",
+      "rating": 5
+    }
+  ],
+  "cta": {
+    "donate": {
+      "title": "Make a Difference Today",
+      "description": "Your support helps us continue our mission of serving humanity through education, orphan care, and Dawah. Every contribution, no matter how small, makes a lasting impact.",
+      "buttonText": "Donate Now"
+    },
+    "volunteer": {
+      "title": "Join Our Mission",
+      "description": "Become part of a community dedicated to making a positive difference. Your time and skills can transform lives and strengthen our programs.",
+      "buttonText": "Get Involved"
+    }
+  }
+}
