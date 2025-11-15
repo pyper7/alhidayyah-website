@@ -19,7 +19,6 @@ export default function CharityWorksSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selectedWork, setSelectedWork] = useState<CharityWork | null>(null);
 
-  // Charity works - one from each category for home page preview
   const charityWorks: CharityWork[] = [
     {
       id: 1,
@@ -55,12 +54,10 @@ export default function CharityWorksSection() {
 
   return (
     <section className="section-padding bg-gradient-to-br from-white via-primary/5 to-primary-light/8 relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 left-1/4 w-[450px] h-[450px] bg-primary-light/8 rounded-full blur-3xl"></div>
         
-        {/* Subtle Pattern */}
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, #026f38 1px, transparent 0)`,
           backgroundSize: '50px 50px'
@@ -92,11 +89,9 @@ export default function CharityWorksSection() {
               onMouseLeave={() => setHoveredIndex(null)}
               onClick={() => setSelectedWork(work)}
             >
-              {/* Media Container */}
               <div className="relative w-full h-[350px] lg:h-[400px] overflow-hidden bg-gradient-to-br from-primary/10 to-primary-light/5">
                 {work.type === "video" ? (
                   <>
-                    {/* Video Thumbnail/Poster */}
                     <div className="absolute inset-0">
                       <Image
                         src={work.thumbnail}
@@ -104,13 +99,11 @@ export default function CharityWorksSection() {
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                         onError={(e) => {
-                          // Fallback if image doesn't exist
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';
                         }}
                       />
                     </div>
-                    {/* Play Button Overlay */}
                     <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
                       <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
                         <svg className="w-10 h-10 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
@@ -126,24 +119,20 @@ export default function CharityWorksSection() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
-                      // Fallback placeholder if image doesn't exist
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
                     }}
                   />
                 )}
                 
-                {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 
-                {/* Category Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3 py-1 bg-primary/90 text-white rounded-full text-xs font-semibold uppercase">
                     {work.category}
                   </span>
                 </div>
                 
-                {/* Content Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
                   <div className="text-white">
                     <span className="text-sm font-semibold opacity-90 mb-2 block">{work.date}</span>
@@ -160,7 +149,6 @@ export default function CharityWorksSection() {
           ))}
         </div>
 
-        {/* View More Button */}
         <div className="text-center">
           <Button href="/charity-works" variant="primary" className="text-base px-8 py-4">
             View More Works →
@@ -168,7 +156,6 @@ export default function CharityWorksSection() {
         </div>
       </div>
 
-      {/* Modal for viewing full image/video */}
       {selectedWork && (
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"

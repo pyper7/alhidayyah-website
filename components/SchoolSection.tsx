@@ -3,19 +3,15 @@ import Button from "./Button";
 export default function SchoolSection() {
   return (
     <section className="section-padding bg-gradient-to-br from-primary-light/8 via-white to-primary/10 relative overflow-hidden">
-      {/* Creative Background */}
       <div className="absolute inset-0">
-        {/* Gradient Mesh */}
         <div className="absolute top-0 left-1/3 w-[600px] h-[600px] bg-primary/12 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-primary-light/10 rounded-full blur-3xl"></div>
         
-        {/* Diagonal Pattern */}
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 15px, #026f38 15px, #026f38 16px),
                            repeating-linear-gradient(-45deg, transparent, transparent 15px, #009241 15px, #009241 16px)`,
         }}></div>
         
-        {/* Dot Pattern Overlay */}
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, #026f38 1px, transparent 0)`,
           backgroundSize: '35px 35px'

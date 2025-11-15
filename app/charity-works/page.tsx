@@ -20,9 +20,7 @@ export default function CharityWorksPage() {
   const [selectedWork, setSelectedWork] = useState<CharityWork | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>("All");
 
-  // Charity works with multiple items per category
   const charityWorks: CharityWork[] = [
-    // Orphanage
     {
       id: 1,
       type: "image",
@@ -53,7 +51,6 @@ export default function CharityWorksPage() {
       date: "March 2024",
       category: "Orphanage"
     },
-    // Dawah
     {
       id: 4,
       type: "video",
@@ -84,7 +81,6 @@ export default function CharityWorksPage() {
       date: "March 2024",
       category: "Dawah"
     },
-    // School
     {
       id: 7,
       type: "image",
@@ -125,7 +121,6 @@ export default function CharityWorksPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-primary/5 to-primary-light/8">
-      {/* Header */}
       <PageBanner
         badge="Our Impact"
         title="Charity Works"
@@ -133,10 +128,8 @@ export default function CharityWorksPage() {
         imageUrl="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920&q=80"
       />
 
-      {/* Main Content */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filter Categories */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((category) => (
               <button
@@ -153,7 +146,6 @@ export default function CharityWorksPage() {
             ))}
           </div>
 
-          {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-12">
             {filteredWorks.map((work) => (
               <div
@@ -161,7 +153,6 @@ export default function CharityWorksPage() {
                 className="group relative bg-white rounded-card border border-primary/10 shadow-lg card-hover overflow-hidden cursor-pointer"
                 onClick={() => setSelectedWork(work)}
               >
-                {/* Media Container */}
                 <div className="relative w-full h-[300px] overflow-hidden bg-gradient-to-br from-primary/10 to-primary-light/5">
                   {work.type === "video" ? (
                     <>
@@ -196,17 +187,14 @@ export default function CharityWorksPage() {
                     />
                   )}
                   
-                  {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   
-                  {/* Category Badge */}
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-primary/90 text-white rounded-full text-xs font-semibold uppercase">
                       {work.category}
                     </span>
                   </div>
                   
-                  {/* Content Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <span className="text-sm text-white/80 font-medium mb-2 block">{work.date}</span>
                     <h3 className="text-xl font-heading font-bold text-white mb-2">
@@ -221,7 +209,6 @@ export default function CharityWorksPage() {
             ))}
           </div>
 
-          {/* Back Button */}
           <div className="text-center">
             <Button href="/" variant="outline" className="text-base px-8 py-4">
               ← Back to Home
@@ -230,7 +217,6 @@ export default function CharityWorksPage() {
         </div>
       </section>
 
-      {/* Modal for viewing full image/video */}
       {selectedWork && (
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"

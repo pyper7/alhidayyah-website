@@ -3,13 +3,10 @@ import Button from "./Button";
 export default function OrphanageSection() {
   return (
     <section className="section-padding bg-gradient-to-br from-primary-light/10 via-primary/8 to-primary/12 relative overflow-hidden">
-      {/* Creative Background Layers */}
       <div className="absolute inset-0">
-        {/* Large Gradient Orbs */}
         <div className="absolute top-1/4 left-1/4 w-[800px] h-[800px] bg-primary/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[700px] h-[700px] bg-primary-light/15 rounded-full blur-3xl"></div>
         
-        {/* Pattern Overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, #026f38 1px, transparent 0)`,
           backgroundSize: '60px 60px'
@@ -18,7 +15,6 @@ export default function OrphanageSection() {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-br from-white/95 via-white/90 to-primary/8 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12 border border-primary/20 relative overflow-hidden">
-          {/* Inner Glow */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-light/5 rounded-2xl pointer-events-none"></div>
           <div className="relative z-10">
           <div className="text-center mb-12 fade-in">

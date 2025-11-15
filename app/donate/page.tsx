@@ -23,7 +23,6 @@ export default function DonatePage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [paystackLoaded, setPaystackLoaded] = useState(false);
 
-  // Quick amount options
   const quickAmounts = [1000, 5000, 10000, 25000, 50000, 100000];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -48,7 +47,7 @@ export default function DonatePage() {
       return;
     }
 
-    const amountInKobo = parseFloat(formData.amount) * 100; // Convert to kobo (Paystack uses kobo)
+    const amountInKobo = parseFloat(formData.amount) * 100;
 
     if (isNaN(amountInKobo) || amountInKobo < 100) {
       alert("Please enter a valid amount (minimum ₦1)");
@@ -63,7 +62,6 @@ export default function DonatePage() {
     setIsProcessing(true);
 
     try {
-      // Get Paystack key from environment variable
       const paystackKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_cc175e3fe8c1d72fbe3d01b68c6ee74626f1e79f';
       
       if (!paystackKey) {
@@ -72,7 +70,6 @@ export default function DonatePage() {
         return;
       }
 
-      // Initialize Paystack payment
       const handler = window.PaystackPop.setup({
         key: paystackKey,
         email: formData.email,
@@ -104,9 +101,7 @@ export default function DonatePage() {
           ],
         },
         callback: function(response: any) {
-          // Payment successful
           alert(`Payment successful! Reference: ${response.reference}`);
-          // Reset form
           setFormData({
             name: "",
             email: "",
@@ -116,10 +111,8 @@ export default function DonatePage() {
             message: "",
           });
           setIsProcessing(false);
-          // You can redirect to a success page or show a success message
         },
         onClose: function() {
-          // User closed the payment modal
           setIsProcessing(false);
           alert("Payment was not completed. You can try again.");
         },
@@ -133,7 +126,6 @@ export default function DonatePage() {
     }
   };
 
-  // Islamic texts about charity
   const charityTexts = [
     {
       arabic: "مَّثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنْبُلَةٍ مِّائَةُ حَبَّةٍ",
@@ -177,9 +169,7 @@ export default function DonatePage() {
         <div className="section-padding py-12 md:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-              {/* Left Column - Islamic Texts */}
               <div className="lg:col-span-1 space-y-6">
-                {/* Quran Verses */}
                 <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-primary/10 p-6 fade-in">
                   <h3 className="text-2xl font-heading font-bold text-text mb-6 flex items-center gap-3">
                     <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
@@ -204,7 +194,6 @@ export default function DonatePage() {
                   </div>
                 </div>
 
-                {/* Hadith */}
                 <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-primary-light/10 p-6 fade-in-delay-1">
                   <h3 className="text-2xl font-heading font-bold text-text mb-6 flex items-center gap-3">
                     <svg className="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -225,7 +214,6 @@ export default function DonatePage() {
                   </div>
                 </div>
 
-                {/* Impact Info */}
                 <div className="bg-gradient-to-br from-primary/10 to-primary-light/10 rounded-2xl p-6 border border-primary/20 fade-in-delay-2">
                   <h4 className="font-heading font-bold text-text mb-4 text-lg">Your Impact</h4>
                   <ul className="space-y-3 text-sm text-gray-700">
@@ -257,7 +245,6 @@ export default function DonatePage() {
                 </div>
               </div>
 
-              {/* Right Column - Donation Form */}
               <div className="lg:col-span-2">
                 <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-primary/10 p-6 sm:p-8 md:p-10 fade-in-delay-2">
                   <div className="mb-8">
@@ -270,7 +257,6 @@ export default function DonatePage() {
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* Name */}
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-text mb-2">
                         Full Name <span className="text-primary">*</span>
@@ -287,7 +273,6 @@ export default function DonatePage() {
                       />
                     </div>
 
-                    {/* Email */}
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-text mb-2">
                         Email Address <span className="text-primary">*</span>
@@ -304,7 +289,6 @@ export default function DonatePage() {
                       />
                     </div>
 
-                    {/* Phone */}
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-text mb-2">
                         Phone Number
@@ -320,7 +304,6 @@ export default function DonatePage() {
                       />
                     </div>
 
-                    {/* Purpose */}
                     <div>
                       <label htmlFor="purpose" className="block text-sm font-medium text-text mb-2">
                         Donation Purpose
@@ -341,13 +324,11 @@ export default function DonatePage() {
                       </select>
                     </div>
 
-                    {/* Amount */}
                     <div>
                       <label htmlFor="amount" className="block text-sm font-medium text-text mb-2">
                         Donation Amount (₦) <span className="text-primary">*</span>
                       </label>
                       
-                      {/* Quick Amount Buttons */}
                       <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 mb-4">
                         {quickAmounts.map((amount) => (
                           <button
@@ -380,7 +361,6 @@ export default function DonatePage() {
                       <p className="text-xs text-gray-500 mt-2">Minimum donation: ₦1</p>
                     </div>
 
-                    {/* Message */}
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-text mb-2">
                         Message (Optional)
@@ -396,7 +376,6 @@ export default function DonatePage() {
                       ></textarea>
                     </div>
 
-                    {/* Submit Button */}
                     <button
                       type="submit"
                       disabled={isProcessing || !paystackLoaded}
@@ -427,7 +406,6 @@ export default function DonatePage() {
                     )}
                   </form>
 
-                  {/* Security Notice */}
                   <div className="mt-8 pt-6 border-t border-gray-200">
                     <div className="flex items-start gap-3">
                       <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

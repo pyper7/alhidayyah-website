@@ -11,7 +11,6 @@ export default function Footer() {
   };
   return (
     <footer className="relative overflow-hidden bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
-      {/* Decorative Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute -top-1/3 -left-1/3 w-[480px] h-[480px] rounded-full bg-white/10 blur-3xl"></div>
@@ -23,7 +22,6 @@ export default function Footer() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top CTA */}
         <div className="py-10 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] text-white/70 mb-2">Support The Mission</p>
@@ -45,9 +43,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Main Footer Content */}
         <div className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-          {/* Brand */}
           <div className="space-y-6">
             <div>
               <h3 className="font-heading text-2xl sm:text-3xl font-bold">AL-Hidayyah</h3>
@@ -88,7 +84,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Navigation */}
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-5">Explore</p>
             <ul className="space-y-3">
@@ -113,7 +108,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Our Programs */}
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-5">Our Programs</p>
             <ul className="space-y-3">
@@ -135,7 +129,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="space-y-4">
             <p className="text-xs uppercase tracking-[0.3em] text-white/60">Contact</p>
             <div className="space-y-4 text-white/80">
@@ -166,7 +159,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="py-6 border-t border-white/10 text-center sm:text-left sm:flex sm:items-center sm:justify-between text-sm text-white/70">
           <p>
             &copy; {new Date().getFullYear()} Al-Hidayyah Islamic Foundation. All rights reserved.

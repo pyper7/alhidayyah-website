@@ -61,19 +61,15 @@ export default function AboutSection() {
   
   return (
     <section className="section-padding bg-gradient-to-br from-primary/8 via-primary-light/5 to-white relative overflow-hidden">
-      {/* Creative Background */}
       <div className="absolute inset-0">
-        {/* Layered Gradient Orbs */}
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-primary/12 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary-light/10 rounded-full blur-3xl translate-x-1/4 translate-y-1/4"></div>
         
-        {/* Islamic Pattern Overlay */}
         <div className="absolute inset-0 opacity-[0.025]" style={{
           backgroundImage: `radial-gradient(circle at 3px 3px, #026f38 1.5px, transparent 0)`,
           backgroundSize: '45px 45px'
         }}></div>
         
-        {/* Diagonal Lines */}
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 10px, #026f38 10px, #026f38 11px)`,
         }}></div>
@@ -98,7 +94,6 @@ export default function AboutSection() {
           <div className="w-24 h-1.5 bg-gradient-to-r from-primary via-primary-light to-primary mx-auto rounded-full shadow-sm fade-in-delay-2"></div>
         </div>
 
-        {/* Vision and Mission */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
           <div className="bg-white/95 backdrop-blur-sm p-10 rounded-2xl shadow-xl border border-primary/10 card-hover relative overflow-hidden fade-in">
             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full"></div>
@@ -152,9 +147,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Core Values */}
         <div className="bg-gradient-to-br from-white/90 via-primary/5 to-primary-light/5 backdrop-blur-sm rounded-2xl p-12 border border-primary/20 shadow-xl relative overflow-hidden fade-in-delay-2">
-          {/* Decorative Corner */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-bl-full blur-2xl"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-light/5 rounded-tr-full blur-2xl"></div>
           <div className="relative z-10">

@@ -13,7 +13,6 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
     console.log("Form submitted:", formData);
     alert("Thank you for your message! We'll get back to you soon.");
     setFormData({ name: "", email: "", subject: "", message: "" });
@@ -26,7 +25,6 @@ export default function ContactPage() {
     });
   };
 
-  // Replace with your actual address
   const address = "123 Main Street, City, State, ZIP Code";
   const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
@@ -41,15 +39,12 @@ export default function ContactPage() {
       <div className="section-padding py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-            {/* Left Column - Contact Information & Map */}
             <div className="space-y-6 md:space-y-8">
-              {/* Contact Information */}
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-primary/10 p-6 sm:p-8 fade-in">
                 <h2 className="text-2xl sm:text-3xl font-heading font-bold text-text mb-5 sm:mb-6">
                   Contact Information
                 </h2>
                 
-                {/* Address */}
                 <div className="mb-5 sm:mb-6">
                   <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
@@ -78,7 +73,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Phone Numbers */}
                 <div className="mb-5 sm:mb-6">
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
@@ -113,7 +107,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Email */}
                 <div>
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
@@ -132,7 +125,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right Column - Contact Form */}
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-primary/10 p-6 sm:p-8 md:p-12 fade-in-delay-2">
               <h2 className="text-2xl sm:text-3xl font-heading font-bold text-text mb-2">
                 Send Us a Message

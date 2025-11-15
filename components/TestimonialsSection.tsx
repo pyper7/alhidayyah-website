@@ -35,14 +35,11 @@ export default function TestimonialsSection() {
 
   return (
     <section className="section-padding bg-gradient-to-br from-primary/10 via-primary-light/6 to-white relative overflow-hidden">
-      {/* Creative Background Layers */}
       <div className="absolute inset-0">
-        {/* Animated Orbs */}
         <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-primary-light/15 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 left-1/4 w-[550px] h-[550px] bg-primary/12 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/8 rounded-full blur-3xl"></div>
         
-        {/* Subtle Pattern */}
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, #026f38 1px, transparent 0)`,
           backgroundSize: '50px 50px'
@@ -71,19 +68,15 @@ export default function TestimonialsSection() {
               className="group bg-white/95 backdrop-blur-sm p-8 rounded-2xl border border-primary/10 shadow-xl card-hover relative overflow-hidden fade-in-delay-{index}"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              {/* Gradient accent */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary-light to-primary"></div>
               
-              {/* Quote icon */}
               <div className="absolute top-6 right-6 text-primary/5 text-7xl font-serif group-hover:text-primary/10 transition-colors duration-500">"</div>
               
-              {/* Shine effect */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </div>
               
               <div className="relative z-10">
-                {/* Rating stars */}
                 <div className="flex mb-5 gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <svg
